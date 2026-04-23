@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"show_notification": false,
+	"pattern": [
+		"###",
+		"###",
+		"###"
+	],
+	"key": {
+		"#": {
+			"item": "mtc:c7_dirt"
+		}
+	},
+	"result": {
+		"item": "mtc:c8_dirt"
+	}
+}

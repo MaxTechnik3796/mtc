@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"show_notification": false,
+	"pattern": [
+		"#"
+	],
+	"key": {
+		"#": {
+			"item": "mtc:c7_gravel"
+		}
+	},
+	"result": {
+		"item": "mtc:c6_gravel",
+		"count": 9
+	}
+}

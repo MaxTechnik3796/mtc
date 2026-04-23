@@ -1,0 +1,10 @@
+{
+	"replace":false,
+	"values":[
+		"mtc:c7_cobblestone",
+		"mtc:c7_dirt",
+		"mtc:c7_gravel",
+		"mtc:c7_deepslate",
+		"mtc:c7_cobbled_deepslate"
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"type":"minecraft:block",
+	"random_sequence":"mtc:blocks/c5_cobblestone",
+	"pools":[
+		{
+			"rolls":1.0,
+			"conditions":[
+				{
+					"condition":"minecraft:survives_explosion"
+				}
+			],
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"mtc:c5_cobblestone"
+				}
+			]
+		}
+	]
+}

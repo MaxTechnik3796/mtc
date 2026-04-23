@@ -1,0 +1,8 @@
+{
+	"parent":"block/cube_all",
+	"textures":{
+		"all":"mtc:block/c3_cobblestone",
+		"particle":"mtc:block/c3_cobblestone"
+	},
+	"render_type":"solid"
+}

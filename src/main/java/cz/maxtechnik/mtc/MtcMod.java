@@ -2,6 +2,8 @@ package cz.maxtechnik.mtc;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +18,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+
+import java.util.Objects;
 @SuppressWarnings("removal")
 @Mod(MtcMod.MODID)
 public class MtcMod{
@@ -29,18 +33,16 @@ public class MtcMod{
 		});
 	}
 	public static final DeferredRegister<CreativeModeTab>TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
-	public static final RegistryObject<CreativeModeTab>TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder().title(net.minecraft.network.chat.Component.translatable("creative_tab.mtc.blocks"))
-					.icon(()->new ItemStack(Items.DRAGON_EGG))
-					.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
-
-
-
+	public static final RegistryObject<CreativeModeTab>TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder()
+			.title(Component.translatable("creative_tab.mtc.blocks"))
+			.icon(()->new ItemStack(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("mtc","c2_cobblestone")))))
+			.displayItems((parameters, output) ->ITEMS.getEntries().forEach(item -> output.accept(item.get()))).build());
 	public MtcMod(){
 		IEventBus bus=FMLJavaModLoadingContext.get().getModEventBus();
 		MtcModBlocks.REGISTRY.register(bus);
 		registerItems();
+		ITEMS.register(bus);
 		TABS.register(bus);
-
 		bus.addListener(this::commonSetup);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

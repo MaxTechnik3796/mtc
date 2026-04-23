@@ -1,0 +1,16 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
+		"#"
+	],
+	"key":{
+		"#":{
+			"item":"mtc:c5_cobblestone"
+		}
+	},
+	"result":{
+		"item":"mtc:c4_cobblestone",
+		"count":9
+	}
+}

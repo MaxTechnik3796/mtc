@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
+		"###",
+		"###",
+		"###"
+	],
+	"key":{
+		"#":{
+			"item":"mtc:c6_cobblestone"
+		}
+	},
+	"result":{
+		"item":"mtc:c7_cobblestone"
+	}
+}
