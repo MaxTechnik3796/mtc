@@ -14,4 +14,4 @@ A high-performance storage solution for players who deal with massive amounts of
 
 📈 Compression Levels (1x to 9x)
 
--This mod pushes the limits of storage by allowing up to 9 levels of compression. Each level is crafted by placing 9 of the previous tier in a crafting grid.
+- This mod pushes the limits of storage by allowing up to 9 levels of compression. Each level is crafted by placing 9 of the previous tier in a crafting grid.
