@@ -1,8 +1,8 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "mtc:block/c6_cobbled_deepslate",
-		"particle": "mtc:block/c6_cobbled_deepslate"
+	"parent":"block/cube_all",
+	"textures":{
+		"all":"mtc:block/c6_cobbled_deepslate",
+		"particle":"mtc:block/c6_cobbled_deepslate"
 	},
-	"render_type": "solid"
+	"render_type":"solid"
 }

@@ -1,21 +1,21 @@
 {
-	"variants": {
-		"axis=x": [
+	"variants":{
+		"axis=x":[
 			{
-				"model": "mtc:block/c8_deepslate",
-				"x": 90,
-				"y": 90
+				"model":"mtc:block/c8_deepslate",
+				"x":90,
+				"y":90
 			}
 		],
-		"axis=y": [
+		"axis=y":[
 			{
-				"model": "mtc:block/c8_deepslate"
+				"model":"mtc:block/c8_deepslate"
 			}
 		],
-		"axis=z": [
+		"axis=z":[
 			{
-				"model": "mtc:block/c8_deepslate",
-				"x": 90
+				"model":"mtc:block/c8_deepslate",
+				"x":90
 			}
 		]
 	}

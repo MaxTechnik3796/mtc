@@ -1,18 +1,18 @@
 {
-	"type": "minecraft:block",
-	"random_sequence": "mtc:blocks/c3_cobblestone",
-	"pools": [
+	"type":"minecraft:block",
+	"random_sequence":"mtc:blocks/c3_cobblestone",
+	"pools":[
 		{
-			"rolls": 1.0,
-			"conditions": [
+			"rolls":1.0,
+			"conditions":[
 				{
-					"condition": "minecraft:survives_explosion"
+					"condition":"minecraft:survives_explosion"
 				}
 			],
-			"entries": [
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "mtc:c3_gravel"
+					"type":"minecraft:item",
+					"name":"mtc:c3_gravel"
 				}
 			]
 		}

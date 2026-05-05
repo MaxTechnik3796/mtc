@@ -1,7 +1,7 @@
 {
-	"variants": {
-		"": {
-			"model": "mtc:block/c5_gravel"
+	"variants":{
+		"":{
+			"model":"mtc:block/c5_gravel"
 		}
 	}
 }

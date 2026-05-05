@@ -1,7 +1,7 @@
 {
-	"parent": "minecraft:block/cube_column",
-	"textures": {
-		"end": "mtc:block/c9_deepslate_top",
-		"side": "mtc:block/c9_deepslate"
+	"parent":"minecraft:block/cube_column",
+	"textures":{
+		"end":"mtc:block/c9_deepslate_top",
+		"side":"mtc:block/c9_deepslate"
 	}
 }

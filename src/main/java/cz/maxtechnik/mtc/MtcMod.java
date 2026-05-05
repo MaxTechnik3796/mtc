@@ -28,14 +28,14 @@ public class MtcMod{
 	public static final DeferredRegister.Items ITEMS=DeferredRegister.createItems(MODID);
 	public void registerItems(){
 		MtcModBlocks.REGISTRY.getEntries().forEach(block->{
-            ITEMS.register(block.getId().getPath(),()->new BlockItem(block.get(),new Item.Properties()));
+			ITEMS.register(block.getId().getPath(),()->new BlockItem(block.get(),new Item.Properties()));
 		});
 	}
-	public static final DeferredRegister<CreativeModeTab>TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder()
+	public static final DeferredRegister<CreativeModeTab> TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
+	public static final DeferredHolder<CreativeModeTab,CreativeModeTab> TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder()
 			.title(Component.translatable("creative_tab.mtc.blocks"))
 			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.parse("mtc:c2_cobblestone")))))
-			.displayItems((parameters, output) ->ITEMS.getEntries().forEach(item -> output.accept(item.get()))).build());
+			.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
 	public MtcMod(IEventBus bus){
 		bus.addListener(this::commonSetup);
 		MtcModBlocks.REGISTRY.register(bus);
@@ -52,7 +52,7 @@ public class MtcMod{
 	public void onServerStarting(ServerStartingEvent event){
 		LOGGER.info("MT-Compressed: Server Starting");
 	}
-	@EventBusSubscriber(modid=MODID,bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
+	@EventBusSubscriber(modid=MODID, bus=EventBusSubscriber.Bus.MOD, value=Dist.CLIENT)
 	public static class ClientModEvents{
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event){
