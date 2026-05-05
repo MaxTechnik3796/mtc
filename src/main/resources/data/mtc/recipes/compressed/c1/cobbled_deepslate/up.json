@@ -1,17 +1,18 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"show_notification": false,
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
 		"###",
 		"###",
 		"###"
 	],
-	"key": {
-		"#": {
-			"item": "minecraft:cobbled_deepslate"
+	"key":{
+		"#":{
+			"item":"minecraft:cobbled_deepslate"
 		}
 	},
-	"result": {
-		"item": "mtc:c1_cobbled_deepslate"
-	}
+	"result":{
+		"id":"mtc:c1_cobbled_deepslate"
+	},
+	"category":"building"
 }

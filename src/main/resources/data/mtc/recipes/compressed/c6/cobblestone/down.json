@@ -10,7 +10,8 @@
 		}
 	},
 	"result":{
-		"item":"mtc:c5_cobblestone",
-		"count":9
-	}
+		"count":9,
+		"id":"mtc:c5_cobblestone"
+	},
+	"category":"building"
 }

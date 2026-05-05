@@ -1,17 +1,18 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"show_notification": false,
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
 		"###",
 		"###",
 		"###"
 	],
-	"key": {
-		"#": {
-			"item": "mtc:c2_gravel"
+	"key":{
+		"#":{
+			"item":"mtc:c2_gravel"
 		}
 	},
-	"result": {
-		"item": "mtc:c3_gravel"
-	}
+	"result":{
+		"id":"mtc:c3_gravel"
+	},
+	"category":"building"
 }

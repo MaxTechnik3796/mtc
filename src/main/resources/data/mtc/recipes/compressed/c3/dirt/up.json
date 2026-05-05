@@ -1,17 +1,18 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"show_notification": false,
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
 		"###",
 		"###",
 		"###"
 	],
-	"key": {
-		"#": {
-			"item": "mtc:c2_dirt"
+	"key":{
+		"#":{
+			"item":"mtc:c2_dirt"
 		}
 	},
-	"result": {
-		"item": "mtc:c3_dirt"
-	}
+	"result":{
+		"id":"mtc:c3_dirt"
+	},
+	"category":"building"
 }

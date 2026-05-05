@@ -1,16 +1,17 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"show_notification": false,
-	"pattern": [
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
 		"#"
 	],
-	"key": {
-		"#": {
-			"item": "mtc:c6_deepslate"
+	"key":{
+		"#":{
+			"item":"mtc:c6_deepslate"
 		}
 	},
-	"result": {
-		"item": "mtc:c5_deepslate",
-		"count": 9
-	}
+	"result":{
+		"count":9,
+		"id":"mtc:c5_deepslate"
+	},
+	"category":"building"
 }

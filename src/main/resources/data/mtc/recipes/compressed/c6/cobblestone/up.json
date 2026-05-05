@@ -12,6 +12,7 @@
 		}
 	},
 	"result":{
-		"item":"mtc:c6_cobblestone"
-	}
+		"id":"mtc:c6_cobblestone"
+	},
+	"category":"building"
 }
