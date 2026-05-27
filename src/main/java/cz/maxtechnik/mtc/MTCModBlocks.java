@@ -6,8 +6,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static net.minecraft.world.level.block.Blocks.*;
-public class MtcModBlocks{
-	public static final DeferredRegister.Blocks REGISTRY=DeferredRegister.createBlocks(MtcMod.MODID);
+public class MTCModBlocks{
+	public static final DeferredRegister.Blocks REGISTRY=DeferredRegister.createBlocks(MTCMod.MODID);
 	static BlockBehaviour.Properties c_cobblestone_props=BlockBehaviour.Properties.ofFullCopy(COBBLESTONE);
 	public static final DeferredBlock<Block> C1_COBBLESTONE=REGISTRY.registerSimpleBlock("c1_cobblestone",c_cobblestone_props);
 	public static final DeferredBlock<Block> C2_COBBLESTONE=REGISTRY.registerSimpleBlock("c2_cobblestone",c_cobblestone_props);

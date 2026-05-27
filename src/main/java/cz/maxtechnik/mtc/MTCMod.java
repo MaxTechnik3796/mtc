@@ -21,13 +21,13 @@ import org.slf4j.Logger;
 
 import java.util.Objects;
 @SuppressWarnings("removal")
-@Mod(MtcMod.MODID)
-public class MtcMod{
+@Mod(MTCMod.MODID)
+public class MTCMod{
 	public static final String MODID="mtc";
 	public static final Logger LOGGER=LogUtils.getLogger();
 	public static final DeferredRegister.Items ITEMS=DeferredRegister.createItems(MODID);
 	public void registerItems(){
-		MtcModBlocks.REGISTRY.getEntries().forEach(block->{
+		MTCModBlocks.REGISTRY.getEntries().forEach(block->{
 			ITEMS.register(block.getId().getPath(),()->new BlockItem(block.get(),new Item.Properties()));
 		});
 	}
@@ -36,9 +36,9 @@ public class MtcMod{
 			.title(Component.translatable("creative_tab.mtc.blocks"))
 			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.parse("mtc:c2_cobblestone")))))
 			.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
-	public MtcMod(IEventBus bus){
+	public MTCMod(IEventBus bus){
 		bus.addListener(this::commonSetup);
-		MtcModBlocks.REGISTRY.register(bus);
+		MTCModBlocks.REGISTRY.register(bus);
 		registerItems();
 		ITEMS.register(bus);
 		TABS.register(bus);
