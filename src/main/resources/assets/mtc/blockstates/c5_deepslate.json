@@ -1,22 +1,7 @@
 {
 	"variants":{
-		"axis=x":[
-			{
-				"model":"mtc:block/c5_deepslate",
-				"x":90,
-				"y":90
-			}
-		],
-		"axis=y":[
-			{
-				"model":"mtc:block/c5_deepslate"
-			}
-		],
-		"axis=z":[
-			{
-				"model":"mtc:block/c5_deepslate",
-				"x":90
-			}
-		]
+		"":{
+			"model":"mtc:block/c5_deepslate"
+		}
 	}
 }
