@@ -37,7 +37,6 @@ public class MTCMod{
 			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MODID,"c2_cobblestone")))))
 			.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
 	public MTCMod(IEventBus bus){
-		bus.addListener(this::commonSetup);
 		MTCModBlocks.REGISTRY.register(bus);
 		registerItems();
 		ITEMS.register(bus);
