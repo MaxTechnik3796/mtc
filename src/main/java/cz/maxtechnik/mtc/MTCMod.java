@@ -34,7 +34,7 @@ public class MTCMod{
 	public static final DeferredRegister<CreativeModeTab> TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
 	public static final DeferredHolder<CreativeModeTab,CreativeModeTab> TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder()
 			.title(Component.translatable("creative_tab.mtc.blocks"))
-			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.parse("mtc:c2_cobblestone")))))
+			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MODID,"c2_cobblestone")))))
 			.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
 	public MTCMod(IEventBus bus){
 		bus.addListener(this::commonSetup);
