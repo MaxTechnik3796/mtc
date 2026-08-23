@@ -5,6 +5,14 @@
 		"mtc:c9_dirt",
 		"mtc:c9_gravel",
 		"mtc:c9_deepslate",
-		"mtc:c9_cobbled_deepslate"
+		"mtc:c9_cobbled_deepslate",
+		"mtc:c9_diorite",
+		"mtc:c9_andesite",
+		"mtc:c9_granite",
+		"mtc:c9_tuff",
+		"mtc:c9_stone",
+		"mtc:c9_netherrack",
+		"mtc:c9_end_stone",
+		"mtc:c9_blackstone"
 	]
 }

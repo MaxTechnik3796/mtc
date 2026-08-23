@@ -20,22 +20,20 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 import java.util.Objects;
-@SuppressWarnings("removal")
+@SuppressWarnings({"removal","unused"})
 @Mod(MTCMod.MODID)
 public class MTCMod{
 	public static final String MODID="mtc";
 	public static final Logger LOGGER=LogUtils.getLogger();
 	public static final DeferredRegister.Items ITEMS=DeferredRegister.createItems(MODID);
 	public void registerItems(){
-		MTCModBlocks.REGISTRY.getEntries().forEach(block->{
-			ITEMS.register(block.getId().getPath(),()->new BlockItem(block.get(),new Item.Properties()));
-		});
+		MTCModBlocks.REGISTRY.getEntries().forEach(block->ITEMS.register(block.getId().getPath(),()->new BlockItem(block.get(),new Item.Properties())));
 	}
 	public static final DeferredRegister<CreativeModeTab> TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
 	public static final DeferredHolder<CreativeModeTab,CreativeModeTab> TAB=TABS.register("nadve_tab",()->CreativeModeTab.builder()
 			.title(Component.translatable("creative_tab.mtc.blocks"))
 			.icon(()->new ItemStack(Objects.requireNonNull(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MODID,"c2_cobblestone")))))
-			.displayItems((parameters,output)->ITEMS.getEntries().forEach(item->output.accept(item.get()))).build());
+			.displayItems((parameters,tabData)->ITEMS.getEntries().forEach(item->tabData.accept(item.get()))).build());
 	public MTCMod(IEventBus bus){
 		MTCModBlocks.REGISTRY.register(bus);
 		registerItems();
