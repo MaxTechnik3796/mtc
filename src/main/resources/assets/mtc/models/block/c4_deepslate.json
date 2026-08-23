@@ -1,7 +1,8 @@
 {
-	"parent":"minecraft:block/cube_column",
+	"parent":"block/cube_all",
 	"textures":{
-		"end":"mtc:block/c4_deepslate_top",
-		"side":"mtc:block/c4_deepslate"
-	}
+		"all":"mtc:block/c4_deepslate",
+		"particle":"mtc:block/c4_deepslate"
+	},
+	"render_type":"solid"
 }

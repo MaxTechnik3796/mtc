@@ -10,8 +10,7 @@
 		}
 	},
 	"result":{
-		"count":9,
-		"id":"minecraft:deepslate"
-	},
-	"category":"building"
+		"id":"mtc:c0_deepslate",
+		"count":9
+	}
 }

@@ -10,8 +10,7 @@
 		}
 	},
 	"result":{
-		"count":9,
-		"id":"mtc:c5_deepslate"
-	},
-	"category":"building"
+		"id":"mtc:c5_deepslate",
+		"count":9
+	}
 }

@@ -1,11 +1,15 @@
 package cz.maxtechnik.mtc;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.function.Supplier;
+
 import static net.minecraft.world.level.block.Blocks.*;
+@SuppressWarnings("unused")
 public class MTCModBlocks{
 	public static final DeferredRegister.Blocks REGISTRY=DeferredRegister.createBlocks(MTCMod.MODID);
 	static BlockBehaviour.Properties c_cobblestone_props=BlockBehaviour.Properties.ofFullCopy(COBBLESTONE);
@@ -38,17 +42,17 @@ public class MTCModBlocks{
 	public static final DeferredBlock<Block> C7_GRAVEL=REGISTRY.registerSimpleBlock("c7_gravel",c_gravel_props);
 	public static final DeferredBlock<Block> C8_GRAVEL=REGISTRY.registerSimpleBlock("c8_gravel",c_gravel_props);
 	public static final DeferredBlock<Block> C9_GRAVEL=REGISTRY.registerSimpleBlock("c9_gravel",c_gravel_props);
-	static BlockBehaviour.Properties c_deepslate_props=BlockBehaviour.Properties.ofFullCopy(COBBLED_DEEPSLATE);
-	public static final DeferredBlock<Block> C1_DEEPSLATE=REGISTRY.registerSimpleBlock("c1_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C2_DEEPSLATE=REGISTRY.registerSimpleBlock("c2_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C3_DEEPSLATE=REGISTRY.registerSimpleBlock("c3_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C4_DEEPSLATE=REGISTRY.registerSimpleBlock("c4_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C5_DEEPSLATE=REGISTRY.registerSimpleBlock("c5_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C6_DEEPSLATE=REGISTRY.registerSimpleBlock("c6_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C7_DEEPSLATE=REGISTRY.registerSimpleBlock("c7_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C8_DEEPSLATE=REGISTRY.registerSimpleBlock("c8_deepslate",c_deepslate_props);
-	public static final DeferredBlock<Block> C9_DEEPSLATE=REGISTRY.registerSimpleBlock("c9_deepslate",c_deepslate_props);
-	static BlockBehaviour.Properties c_cobbled_deepslate_props=BlockBehaviour.Properties.ofFullCopy(DEEPSLATE);
+	static Supplier<? extends Block> c_deepslate=()->new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE));
+	public static final DeferredBlock<Block> C1_DEEPSLATE=REGISTRY.register("c1_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C2_DEEPSLATE=REGISTRY.register("c2_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C3_DEEPSLATE=REGISTRY.register("c3_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C4_DEEPSLATE=REGISTRY.register("c4_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C5_DEEPSLATE=REGISTRY.register("c5_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C6_DEEPSLATE=REGISTRY.register("c6_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C7_DEEPSLATE=REGISTRY.register("c7_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C8_DEEPSLATE=REGISTRY.register("c8_deepslate",c_deepslate);
+	public static final DeferredBlock<Block> C9_DEEPSLATE=REGISTRY.register("c9_deepslate",c_deepslate);
+	static BlockBehaviour.Properties c_cobbled_deepslate_props=BlockBehaviour.Properties.ofFullCopy(COBBLED_DEEPSLATE);
 	public static final DeferredBlock<Block> C1_COBBLED_DEEPSLATE=REGISTRY.registerSimpleBlock("c1_cobbled_deepslate",c_cobbled_deepslate_props);
 	public static final DeferredBlock<Block> C2_COBBLED_DEEPSLATE=REGISTRY.registerSimpleBlock("c2_cobbled_deepslate",c_cobbled_deepslate_props);
 	public static final DeferredBlock<Block> C3_COBBLED_DEEPSLATE=REGISTRY.registerSimpleBlock("c3_cobbled_deepslate",c_cobbled_deepslate_props);
