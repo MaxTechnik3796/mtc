@@ -1,0 +1,8 @@
+{
+	"parent":"minecraft:block/cube_column",
+	"textures":{
+		"side":"mtc:block/c5_blackstone",
+		"end":"mtc:block/c5_blackstone_top"
+	},
+	"render_type":"solid"
+}

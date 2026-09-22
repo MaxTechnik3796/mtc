@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
+		"###",
+		"###",
+		"###"
+	],
+	"key":{
+		"#":{
+			"item":"mtc:c8_diorite"
+		}
+	},
+	"result":{
+		"id":"mtc:c9_diorite"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"parent":"block/cube_all",
+	"textures":{
+		"all":"mtc:block/c6_diorite",
+		"particle":"mtc:block/c6_diorite"
+	},
+	"render_type":"solid"
+}

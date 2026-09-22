@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
+		"###",
+		"###",
+		"###"
+	],
+	"key":{
+		"#":{
+			"item":"mtc:c2_granite"
+		}
+	},
+	"result":{
+		"id":"mtc:c3_granite"
+	}
+}

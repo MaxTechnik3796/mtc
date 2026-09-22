@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"show_notification":false,
+	"pattern":[
+		"###",
+		"###",
+		"###"
+	],
+	"key":{
+		"#":{
+			"item":"mtc:c2_netherrack"
+		}
+	},
+	"result":{
+		"id":"mtc:c3_netherrack"
+	}
+}
