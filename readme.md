@@ -1,17 +1,28 @@
+# 🗜️ MT-Compressed
 
-**🗜️ MT-Compressed (Utility)**
+A system for storing thousands of blocks without taking up excessive storage space and enabling faster transport.
 
-A high-performance storage solution for players who deal with massive amounts of resources. This module allows you to condense thousands of items into a single block for easy transport and inventory management.
+***
 
-🧱 Supported Blocks
-- Currently, the mod supports the three most common "filler" blocks found during large-scale projects:
+📦 CurseForge: [[Here]](https://www.curseforge.com/minecraft/mc-mods/mtc)
 
-   `Cobblestone`
+🟠 GitHub Issue: [[Here]](https://github.com/MaxTechnik3796/mtc)
 
-   `Dirt`
+💬 Discord: [[Here]](https://discord.gg/mjVprFtWTk)
 
-   `Deepslate`
+***
 
-📈 Compression Levels (1x to 9x)
+### ✨ Features
 
-- This mod pushes the limits of storage by allowing up to 9 levels of compression. Each level is crafted by placing 9 of the previous tier in a crafting grid.
+#### 📈 Compression Levels (1x – 9x)
+
+| Level | Recipe      | Result               |
+|-------|-------------|----------------------|
+| 1x    | 9 × Block   | 1 × Compressed Block |
+| 2x    | 9 × 1x Blok | 1 × 2x Blok          |
+| ...   | ...         | ...                  |
+| 9x    | 9 × 8x Blok | 1 × 9x Blok          |
+
+#### 🧱 Supported Blocks
+
+`Dirt` · `Stone` · `Cobblestone` · `Andesite` · `Diorite` · `Granite` · `Gravel` · `Tuff` · `Deepslate` · `Cobbled Deepslate` · `Blackstone`
